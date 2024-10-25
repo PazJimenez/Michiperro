@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos para ubicar y reportar"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+
+        <!--Para mostrar la barra de carga ubicar-->
+        <ProgressBar
+            android:id="@+id/progressBarUbicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campo de texto Nombre del Dispositivo -->
+        <EditText
+            android:id="@+id/editDispositivo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Nombre del dispositivo"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <!-- Campo de texto Última ubicación conocida -->
+        <EditText
+            android:id="@+id/editUbicacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Última ubicación conocida"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <!-- Campo de texto Detalles adicionales -->
+        <EditText
+            android:id="@+id/editDetalles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Detalles importantes"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:layout_marginTop="16dp"/>
+
+        <CheckBox
+            android:id="@+id/checkPerdido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perdido" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:text="Indique la fecha " />
+
+        <CalendarView
+            android:id="@+id/calendario"
+            android:layout_width="181dp"
+            android:layout_height="207dp" />
+
+        <!-- Botón Submit -->
+        <Button
+            android:id="@+id/btnSubmitUbicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubicar"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/boton"
+            android:textColor="#FFFFFF"/>
+
+
+    </LinearLayout>
+</ScrollView>

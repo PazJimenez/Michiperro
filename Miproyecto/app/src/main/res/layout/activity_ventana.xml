@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear cuenta"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <!--Para mostrar la barra de carga crear cuenta-->
+        <ProgressBar
+            android:id="@+id/progressBarCrearCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+
+
+        <!-- Campo de texto Nombre -->
+        <EditText
+            android:id="@+id/editNombreCuidador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Nombre Cuidador"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+        <EditText
+            android:id="@+id/editCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <!-- Campo de texto Historial Médico -->
+        <EditText
+            android:id="@+id/editContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <!-- Campo de texto Descripción Física -->
+        <EditText
+            android:id="@+id/editRepContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repita su contraseña"
+            android:inputType="textPassword"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Botón Submit -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registar"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/boton"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

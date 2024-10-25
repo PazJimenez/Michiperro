@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/fondo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!--Para mostrar la barra de carga-->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Imagen de la mascota -->
+        <ImageView
+            android:id="@+id/imagenMascota"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/mascota"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Imagen de la mascota"
+            android:layout_marginBottom="16dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos del MichiPerro"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <!-- Campo de texto Nombre -->
+        <EditText
+            android:id="@+id/editNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <!-- Campo de texto Historial Médico -->
+        <EditText
+            android:id="@+id/editHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Vacunas, atención especial"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <!-- Campo de texto Descripción Física -->
+        <EditText
+            android:id="@+id/editDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción física"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Botón Submit -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registar"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/boton"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnOpenUbicar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abrir Ubicar y/o Reportar"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/boton"
+            android:onClick="openUbicarReportar"/>
+
+    </LinearLayout>
+</ScrollView>
